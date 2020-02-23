@@ -1,0 +1,49 @@
+<%- include("partials/header"); -%>
+     <form  class=" " action="/bus" method="post">
+         
+
+     </form>   
+        <div class="search-form-box">    
+            <div class="radio-btn">
+                <input type="radio"  class="btn" name="check"  checked="checked"><span>Roundtrip</span>
+                <input type="radio"  class="btn" name="check"><span>One Way</span>
+                <input type="radio"  class="btn" name="check"><span>Multi  Way</span>
+            </div>
+            <div class="search-form">
+                <label>From</label>
+                <input type="text" class="form-control" placeholder="from" name="from">
+                <label>To</label>
+                <input type="text"  class="form-control" placeholder="to" name="to">
+                
+           
+            <div class="input-grab">
+                <label>Date</label>
+                <input type="date" class="form-control select-date">
+            </div>
+            <div class="input-grab">
+                <label>Time</label>
+                <input type="time" class="form-control select-time" name="time">
+            </div>
+            <div class="input-grab">
+                <label>Bus Route Type</label>
+                <select class="custom-select">
+                    <option value="1">direct bus</option>
+                    <option value="2">Mini bus</option>
+                    <option value="3">Town  bus</option>
+                    <option value="4">Route bus</option>
+                </select>
+                
+            </div>
+            <div class="input-grab">
+                <button     class="btn btn-primary buses"  type="submit" name="button"><a href="/bus">
+                search</a></button>
+            </div>
+            </div>
+        
+
+     </div>
+        
+        
+    
+</body>
+</html>
